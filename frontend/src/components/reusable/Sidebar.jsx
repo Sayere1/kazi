@@ -1,16 +1,16 @@
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import UserProfile from "./UserProfile";
 import NavItems from "./NavItems";
+import UserWeather from "./userWeather";
 
 // Sidebar.jsx
 
 const Sidebar = ({
   collapsed,
   setCollapsed,
-  navItems = [],        // [{ section: "Main", items: [...] }]
-  title = "App Title",
+  navItems = [],
+  title = "KaziHub",
   LogoIcon,
-  showUserProfile = true,
+  showUserWeather = true,
 }) => {
   return (
     <aside
@@ -20,8 +20,8 @@ const Sidebar = ({
       flex flex-col fixed h-full transition-all duration-300`}
     >
       {/* Header */}
-      <div className="p-6 flex items-center gap-3">
-        <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+      <div className="p-4 flex items-center">
+        <div className="size-8 flex items-center justify-center text-white">
           {LogoIcon && <LogoIcon />}
         </div>
 
@@ -69,7 +69,7 @@ const Sidebar = ({
       </nav>
 
       {/* Optional User Profile */}
-      {!collapsed && showUserProfile && <UserProfile />}
+      {!collapsed && showUserWeather && <UserWeather />}
     </aside>
   );
 };

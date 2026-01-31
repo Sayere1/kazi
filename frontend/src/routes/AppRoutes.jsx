@@ -4,6 +4,8 @@ import MainLayout from "../layout/MainLayout"
 import ProtectedRoutes from "./ProtectedRoute"
 import OnboardingLayout from "../layout/OnboardingLayout";
 import OnboardingFlow from "../auth/OnboardingFlow";
+import DashboardLayout from "../layout/DashboardLayout";
+import DashboardPage from "../page/dashboard/DashboardPage";
 
 
 
@@ -11,6 +13,9 @@ const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/login" element={<LoginPage />} />
+            <Route path="dashboard" element={<DashboardLayout />}>
+                <Route index element={<DashboardPage />} />
+            </Route>
 
             {/*Protected routes */}
             <Route
@@ -25,11 +30,11 @@ const AppRoutes = () => {
                     <Route index element={<OnboardingFlow />} />
                 </Route>
 
-                {/*   <Route element={<DashboardLayout />}>
+                <Route element={<DashboardLayout />}>
                     <Route index element={<DashboardPage />} />
                 </Route>
 
-                */}
+
 
             </Route>
         </Routes>
@@ -37,8 +42,3 @@ const AppRoutes = () => {
 }
 
 export default AppRoutes
-
-
-
-
-

@@ -1,4 +1,3 @@
-// src/routes/ProtectedRoute.jsx
 import React from 'react'
 
 const ProtectedRoute = () => {
@@ -10,4 +9,3 @@ const ProtectedRoute = () => {
 }
 
 export default ProtectedRoute
-

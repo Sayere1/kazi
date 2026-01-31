@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiBell, FiHelpCircle, FiPlus, FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import UserProfile from "./UserProfile";
 
 const NavBar = ({
   collapsed = false,
@@ -15,7 +16,7 @@ const NavBar = ({
   showHelp = true,
   onHelpClick,
   profileImage,
-  navLinks = [], // NEW
+  navLinks = [],
   onSettings,
   onLogout,
 }) => {
@@ -26,7 +27,7 @@ const NavBar = ({
       className={`
         h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800
         flex items-center justify-between sticky top-0 z-10 transition-all duration-300
-        ${collapsed ? "pl-20 pr-8" : "pl-10 pr-4"}
+        ${collapsed ? "pl-8 pr-6" : "pl-8 pr-8"}
       `}
     >
       {/* Left Section: NavLinks + Search */}
@@ -99,16 +100,11 @@ const NavBar = ({
         {/* Profile Image + Dropdown */}
         {profileImage && (
           <div className="relative">
-            <img
-              src={profileImage}
-              alt="Profile"
-              className="w-9 h-9 rounded-full object-cover border border-slate-300
-               dark:border-slate-700 cursor-pointer"
-              onClick={() => setOpenDropdown((prev) => !prev)}
-            />
+            <UserProfile onClick={() => setOpenDropdown((prev) => !prev)}
+              className="object-cover cursor-pointer"/>
 
             {openDropdown && (
-              <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-slate-800 
+              <div className="absolute right-0 w-40 bg-white dark:bg-slate-800 
               shadow-lg rounded-lg py-2 border border-slate-200 dark:border-slate-700">
                 <button
                   onClick={onSettings}

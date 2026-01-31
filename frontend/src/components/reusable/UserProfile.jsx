@@ -1,8 +1,9 @@
 import userImage from "../../assets/images/image1.png";
 
-const UserProfile = () => {
+const UserProfile = ({onClick, className = ""}) => {
   return (
-    <div className="p-4 border-t border-slate-200 dark:border-slate-800">
+    <div className={`p-0.5 border-t border-slate-200 dark:border-slate-800 ${className}`}
+    onClick={onClick}>
       <div className="flex items-center gap-3 p-2">
         <div
           className="bg-center bg-cover rounded-full size-10 border-2 border-primary"
@@ -21,3 +22,4 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+
