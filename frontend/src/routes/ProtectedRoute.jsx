@@ -1,0 +1,13 @@
+// src/routes/ProtectedRoute.jsx
+import React from 'react'
+
+const ProtectedRoute = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default ProtectedRoute
+
