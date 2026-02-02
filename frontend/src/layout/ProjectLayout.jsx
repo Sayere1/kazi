@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-
-import Sidebar from "../components/reusable/Sidebar";
-import NavBar from "../components/reusable/NavBar";
 import Logo from "../assets/images/kazilogo.png";
 
 import { FiBarChart2, FiLayers, FiUsers, FiSettings } from "react-icons/fi";
 import { MdDashboard } from "react-icons/md";
 
+import Sidebar from "../components/reusable/Sidebar";
+import NavBar from "../components/reusable/NavBar";
+
 import { useKanbanStore } from "../store/kanbanStore";
 
-const DashboardLayout = () => {
+
+const ProjectLayout = () => {
 
   const MyLogo = () => <img src={Logo} className="w-5 h-5" />;
 
@@ -22,7 +23,7 @@ const DashboardLayout = () => {
         { icon: <FiLayers />, label: "Projects", to: "/projects" },
       ],
     },
-        {
+    {
       section: "KizaTools",
       items: [
         { icon: <FiSettings />, label: "Settings", to: "/settings" },
@@ -70,7 +71,7 @@ const DashboardLayout = () => {
           navItems={navItems}
           title="aziHub"
           LogoIcon={MyLogo}
-          showUserWeather={true}
+          showUserProfile={true}
         />
 
         {/* MAIN CONTENT */}
@@ -78,10 +79,9 @@ const DashboardLayout = () => {
           className={`flex-1 flex flex-col transition-all duration-300 ${collapsed ? "ml-20" : "ml-64"
             }`}
         >
-
           <NavBar
             collapsed={collapsed}
-            showSearch={true}
+            showSearch={false}
             searchPlaceholder="Search tasks..."
             onSearch={(value) => console.log("Searching:", value)}
             showAddButton={false}
@@ -96,6 +96,13 @@ const DashboardLayout = () => {
             // Add dropdown actions
             onSettings={handleSettings}
             onLogout={handleLogout}
+
+            // Add nav links 
+            navLinks={[
+              { label: "Manage", href: "/projects/list" },
+              { label: "Report", href: "/projects" },
+              { label: "Timeline", href: "/projects/timeline" },
+            ]}
           />
 
           <div className="p-8">
@@ -108,4 +115,5 @@ const DashboardLayout = () => {
   );
 };
 
-export default DashboardLayout;
+export default ProjectLayout;
+
