@@ -25,7 +25,7 @@ const DashboardLayout = () => {
         {
       section: "KizaTools",
       items: [
-        { icon: <FiSettings />, label: "Settings", to: "/settings" },
+        { icon: <FiSettings />, label: "KaziBoard", to: "/workflow"},
         { icon: <FiBarChart2 />, label: "Admin", to: "/admin" },
       ],
     },

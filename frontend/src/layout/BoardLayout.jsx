@@ -6,12 +6,12 @@ import { FiBarChart2, FiLayers, FiUsers, FiSettings } from "react-icons/fi";
 import { MdDashboard } from "react-icons/md";
 
 import Sidebar from "../components/reusable/Sidebar";
-import NavBar from "../components/reusable/NavBar";
+//import NavBar from "../components/reusable/NavBar";
 
-import { useKanbanStore } from "../store/kanbanStore";
+//import { useKanbanStore } from "../store/kanbanStore";
 
 
-const ProjectLayout = () => {
+const BoardLayout = () => {
 
   const MyLogo = () => <img src={Logo} className="w-5 h-5" />;
 
@@ -27,7 +27,7 @@ const ProjectLayout = () => {
       section: "KizaTools",
       items: [
         { icon: <FiSettings />, label: "KaziBoard", to: "/workflow" },
-        { icon: <FiBarChart2 />, label: "Admin", to: "/admin" },
+        { icon: <FiBarChart2 />, label: "IdeaP", to: "/workflow/idea" },
       ],
     },
     {
@@ -48,16 +48,16 @@ const ProjectLayout = () => {
 
 
   const [collapsed, setCollapsed] = useState(false);
-  const { openAddColumn } = useKanbanStore();
+  //const { openAddColumn } = useKanbanStore();
 
   // Profile dropdown actions
-  const handleSettings = () => {
-    console.log("Go to settings");
-  };
+  //const handleSettings = () => {
+   // console.log("Go to settings");
+  //};
 
-  const handleLogout = () => {
-    console.log("Logging out...");
-  };
+  //const handleLogout = () => {
+    //console.log("Logging out...");
+ // };
 
 
   return (
@@ -79,31 +79,7 @@ const ProjectLayout = () => {
           className={`flex-1 flex flex-col transition-all duration-300 ${collapsed ? "ml-20" : "ml-64"
             }`}
         >
-          <NavBar
-            collapsed={collapsed}
-            showSearch={false}
-            searchPlaceholder="Search tasks..."
-            onSearch={(value) => console.log("Searching:", value)}
-            showAddButton={false}
-            addButtonLabel="New Column"
-            onAdd={openAddColumn}
-            showNotifications={true}
-            onBellClick={() => console.log("Bell clicked")}
-            showHelp={true}
-            onHelpClick={() => console.log("Help clicked")}
-            profileImage={true}
 
-            // Add dropdown actions
-            onSettings={handleSettings}
-            onLogout={handleLogout}
-
-            // Add nav links 
-            navLinks={[
-              { label: "Manage", href: "/projects/list" },
-              { label: "Report", href: "/projects" },
-              { label: "Timeline", href: "/projects/timeline" },
-            ]}
-          />
 
           <div className="p-8">
             <Outlet />
@@ -115,5 +91,5 @@ const ProjectLayout = () => {
   );
 };
 
-export default ProjectLayout;
+export default BoardLayout;
 

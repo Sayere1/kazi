@@ -1,3 +1,9 @@
+import userImage1 from "../assets/images/image1.png";
+import userImage2 from "../assets/images/image2.png";
+import userImage3 from "../assets/images/image3.png";
+import userImage4 from "../assets/images/image4.png";
+import bookImage from "../assets/images/image10.png";
+
 export const bottlenecksData = [
   {
     id: 1,
@@ -5,9 +11,8 @@ export const bottlenecksData = [
     detail: "PR #452 blocked by auth issues",
     project: "Fintech Portal 2.0",
     priority: "High",
-    owner: "M. Chen",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDxO2UqVWa2MAK3rzbAUurJNiBEzbkvCTHhM41i9cKaM5QgXFLjbe5POp1cC6bPTF6KiaClyI_Mmze6O08chno0Neggi2IFDbI5A5k70BwKW6NPBSdcR6CdTb-jTqT18a4Eq2ATFoVs-FplbzW9EyjZEv6_TuuICQjyFMyOYKFlVGU9WAH8r6LMjCii2ai8U0TkeLKTx5PE7I35OTXZCry54RU4VSofGzAgeGdvd94lHw4E2Mc7dGfbP2dOn38XdLvywAgQNAsmTQ8",
+    owner: "Ali Omar",
+    ownerImg: userImage3,
     status: "Stuck",
     statusType: "warning",
   },
@@ -17,9 +22,8 @@ export const bottlenecksData = [
     detail: "Marketing materials pending approval",
     project: "Q3 Global Rebrand",
     priority: "Medium",
-    owner: "S. Jenkins",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDZvZXkgasTyu8feMjyDf0YeFavAr-fyhAGxvyDrsYXVF9X391Z47LAYZ6CoahjDpRiULpzYFGXyOYPYbmUQJY2o-kSky0fAFToTq339_umQrwRaMovnfYEXRKElWBlj-9dFqU9H9R0h9RWezSgDkkOO1jIyT25YH5M55aEE24X_kRTR3EAxZszZwzDNcc7aBDf-x7CAZ_wVjPTvRyzp_oD7eIlHGmX9C4u2G3OXA_rX5Es4JVzMsc9DXxTSD7FH6RKPyVL0YLzJ88",
+    owner: "Omarion Fabrizo",
+    ownerImg: userImage2,
     status: "Waiting",
     statusType: "neutral",
   },
@@ -29,9 +33,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "High",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Shumacker James",
+    ownerImg: userImage4,
     status: "Critical",
     statusType: "danger",
   },
@@ -41,9 +44,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "High",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Tracy Nyono",
+    ownerImg: userImage1,
     status: "Critical",
     statusType: "danger",
   },
@@ -53,9 +55,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Tracy Nyono",
+    ownerImg: userImage1,
     status: "Critical",
     statusType: "danger",
   },
@@ -65,9 +66,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Ali omar",
+    ownerImg: userImage3,
     status: "Critical",
     statusType: "danger",
   },
@@ -77,9 +77,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Omarion Fabrizo",
+    ownerImg: userImage2,
     status: "Critical",
     statusType: "danger",
   },
@@ -89,9 +88,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Omarion Fabrizo",
+    ownerImg: userImage2,
     status: "Critical",
     statusType: "danger",
   },
@@ -101,9 +99,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Ali Omar",
+    ownerImg: userImage3,
     status: "Critical",
     statusType: "danger",
   },
@@ -113,9 +110,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Ali Omar",
+    ownerImg: userImage3,
     status: "Critical",
     statusType: "danger",
   },
@@ -125,10 +121,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
-    status: "Critical",
+    owner: "Shumacker James",
+    ownerImg: userImage4,
     statusType: "danger",
   },
       {
@@ -137,9 +131,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
+    owner: "Omarion Fabrizo",
+    ownerImg: userImage2,
     status: "Critical",
     statusType: "danger",
   },
@@ -149,10 +142,8 @@ export const bottlenecksData = [
     detail: "Schema conflict in staging",
     project: "Internal CRM",
     priority: "low",
-    owner: "D. Park",
-    ownerImg:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBribF1fdAg-sVx25NIuLj1__NnxL0320A8oucvlsdB7YRq3Ke_BPO9JAJJ720mxAIPUUtP9FFutn9ENu0XbXHzIrLPJgSv8JjbUds3Mxi83BPUTCNnKo-5OUgQwX8yRrvtRVMFWr9w_y_5J-4QGhluYoFccN3HoBduaPGCY8m0PS2RNBfnzFPEYwK7-L9d-pgwyw9D-rAUVr4XiS3VEueRpW2EpUp1a56kdaxla8E9WVb1585y-olbS8qAbiT9BKuq9jk8AEsCg4A",
-    status: "Critical",
+    owner: "Shumacker James",
+    ownerImg: userImage4,
     statusType: "danger",
   },
 ];
@@ -196,7 +187,7 @@ export const initialKanban = {
       date: "Oct 24",
       comments: 4,
       attachments: 0,
-      avatar: "https://i.pravatar.cc/100?img=1",
+      avatar: userImage1,
     },
     t2: {
       id: "t2",
@@ -206,7 +197,7 @@ export const initialKanban = {
       date: "Oct 28",
       comments: 0,
       attachments: 0,
-      avatar: "https://i.pravatar.cc/100?img=2",
+      avatar: userImage2,
     },
     t3: {
       id: "t3",
@@ -216,7 +207,7 @@ export const initialKanban = {
       date: "Oct 25",
       comments: 0,
       attachments: 0,
-      avatar: "https://i.pravatar.cc/100?img=3",
+      avatar: userImage3,
     },
     t4: {
       id: "t4",
@@ -226,8 +217,8 @@ export const initialKanban = {
       date: "Today",
       comments: 0,
       attachments: 2,
-      avatar: "https://i.pravatar.cc/100?img=4",
-      cover: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+      avatar: userImage4,
+      cover: bookImage,
     },
     t5: {
       id: "t5",
@@ -237,7 +228,7 @@ export const initialKanban = {
       date: "Tomorrow",
       comments: 0,
       attachments: 0,
-      avatar: "https://i.pravatar.cc/100?img=5",
+      avatar: userImage1,
     },
     t6: {
       id: "t6",
@@ -247,7 +238,7 @@ export const initialKanban = {
       date: "Oct 22",
       comments: 0,
       attachments: 0,
-      avatar: "https://i.pravatar.cc/100?img=6",
+      avatar: userImage2,
     },
     t7: {
       id: "t7",
@@ -256,7 +247,7 @@ export const initialKanban = {
       priorityColor: "green",
       date: "Oct 15",
       done: true,
-      avatar: "https://i.pravatar.cc/100?img=7",
+      avatar: userImage3,
     },
     t8: {
       id: "t8",
@@ -265,7 +256,7 @@ export const initialKanban = {
       priorityColor: "green",
       date: "Oct 12",
       done: true,
-      avatar: "https://i.pravatar.cc/100?img=8",
+      avatar: userImage4,
     },
   },
 };

@@ -10,7 +10,7 @@ const TeamWorkload = () => {
         {/* Sarah */}
         <div className="space-y-1">
           <div className="flex justify-between text-xs font-bold uppercase text-slate-400">
-            <span>Sarah Jenkins (Lead)</span>
+            <span>Tracy Nyono (Lead)</span>
             <span>12 Tasks</span>
           </div>
           <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
@@ -21,7 +21,7 @@ const TeamWorkload = () => {
         {/* Marcus */}
         <div className="space-y-1">
           <div className="flex justify-between text-xs font-bold uppercase text-slate-400">
-            <span>Marcus Chen</span>
+            <span>Omarion Fabrizo</span>
             <span>8 Tasks</span>
           </div>
           <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
@@ -32,7 +32,7 @@ const TeamWorkload = () => {
         {/* Elena */}
         <div className="space-y-1">
           <div className="flex justify-between text-xs font-bold uppercase text-slate-400">
-            <span>Elena Rodriguez</span>
+            <span>Shumacker James</span>
             <span>15 Tasks</span>
           </div>
           <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
@@ -43,7 +43,7 @@ const TeamWorkload = () => {
         {/* David */}
         <div className="space-y-1">
           <div className="flex justify-between text-xs font-bold uppercase text-slate-400">
-            <span>David Park</span>
+            <span>Ali Omar</span>
             <span>4 Tasks</span>
           </div>
           <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">

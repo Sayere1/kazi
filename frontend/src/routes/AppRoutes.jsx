@@ -12,11 +12,26 @@ import ManageProject from "../page/project/ManageProject";
 import CreateProjectPage from "../page/project/CreateProjectPage";
 import ProjectDetailsPage from "../page/project/ProjectDetailsPage";
 import ProjectFeedbackPage from "../page/project/ProjectFeedbackPage";
+import TaskBoardPage from "../page/taskboard/TaskBoardPage";
+import BoardLayout from "../layout/BoardLayout";
+import KaziIdeaPage from "../page/taskboard/KaziIdeaPage";
+
+
 
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/login" element={<LoginPage />} />
+
+            <Route path="dashboard" element={<DashboardLayout />}>
+                <Route index element={<DashboardPage />} />
+            </Route>
+
+                        <Route path="workflow" element={<BoardLayout />}>
+                <Route index element={<TaskBoardPage />} />
+                <Route path="idea" element={<KaziIdeaPage />} />
+            </Route>
+
 
             {/*Protected routes */}
             <Route
@@ -42,6 +57,7 @@ const AppRoutes = () => {
                     <Route path=":projectId" element={<ProjectDetailsPage />} />
                     <Route path="/projects/:projectId/feedback" element={<ProjectFeedbackPage />} />
                 </Route>
+
 
                 <Route element={<ProjectLayout />}>
                     <Route index element={<ProjectOverview />} />
