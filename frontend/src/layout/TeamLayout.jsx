@@ -11,7 +11,7 @@ import NavBar from "../components/reusable/NavBar";
 import { useKanbanStore } from "../store/kanbanStore";
 
 
-const ProjectLayout = () => {
+const TeamLayout = () => {
 
   const MyLogo = () => <img src={Logo} className="w-5 h-5" />;
 
@@ -99,7 +99,7 @@ const ProjectLayout = () => {
 
             // Add nav links 
             navLinks={[
-              { label: "Manage", href: "/projects/list" },
+              { label: "list", href: "/teams/team-list" },
               { label: "Report", href: "/projects" },
               { label: "Timeline", href: "/projects/timeline" },
             ]}
@@ -115,5 +115,5 @@ const ProjectLayout = () => {
   );
 };
 
-export default ProjectLayout;
+export default TeamLayout;
 

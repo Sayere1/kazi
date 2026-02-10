@@ -15,23 +15,16 @@ import ProjectFeedbackPage from "../page/project/ProjectFeedbackPage";
 import TaskBoardPage from "../page/taskboard/TaskBoardPage";
 import BoardLayout from "../layout/BoardLayout";
 import KaziIdeaPage from "../page/taskboard/KaziIdeaPage";
-
+import TeamLayout from "../layout/TeamLayout";
+import TeamOverview from "../page/team/TeamOverview";
+import TeamList from "../page/team/TeamList";
+import IDTeam from "../page/team/IDTeam";
 
 
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/login" element={<LoginPage />} />
-
-            <Route path="dashboard" element={<DashboardLayout />}>
-                <Route index element={<DashboardPage />} />
-            </Route>
-
-                        <Route path="workflow" element={<BoardLayout />}>
-                <Route index element={<TaskBoardPage />} />
-                <Route path="idea" element={<KaziIdeaPage />} />
-            </Route>
-
 
             {/*Protected routes */}
             <Route
@@ -58,9 +51,15 @@ const AppRoutes = () => {
                     <Route path="/projects/:projectId/feedback" element={<ProjectFeedbackPage />} />
                 </Route>
 
+                <Route path="workflow" element={<BoardLayout />}>
+                    <Route index element={<TaskBoardPage />} />
+                    <Route path="idea" element={<KaziIdeaPage />} />
+                </Route>
 
-                <Route element={<ProjectLayout />}>
-                    <Route index element={<ProjectOverview />} />
+                <Route path="teams" element={<TeamLayout />}>
+                    <Route index element={<TeamOverview />} />
+                    <Route path="team-list" element={<TeamList />} />
+                    <Route path=":team-Id" element={<IDTeam />} />
                 </Route>
 
             </Route>
