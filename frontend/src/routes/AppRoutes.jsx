@@ -19,12 +19,28 @@ import TeamLayout from "../layout/TeamLayout";
 import TeamOverview from "../page/team/TeamOverview";
 import TeamList from "../page/team/TeamList";
 import IDTeam from "../page/team/IDTeam";
+import TeamDashboardLayout from "../layout/TeamDashboardLayout";
+import TMOverview from "../page/teamdashboard/TMOverview";
+import TeamTaskPage from "../page/teamdashboard/TeamTaskPage";
+import MyWorkPage from "../page/teamdashboard/MyWork";
+
+
 
 
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/login" element={<LoginPage />} />
+
+            <Route element={<DashboardLayout />}>
+                <Route index element={<DashboardPage />} />
+            </Route>
+
+            <Route path="teamwork" element={<TeamDashboardLayout />}>
+                <Route index element={<TMOverview />} />
+                <Route path="tmtask" element={<TeamTaskPage />} />
+                <Route path="tmwork" element={<MyWorkPage />} />
+            </Route>
 
             {/*Protected routes */}
             <Route

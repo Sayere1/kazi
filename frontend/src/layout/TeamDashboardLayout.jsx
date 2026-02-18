@@ -10,7 +10,7 @@ import { MdDashboard } from "react-icons/md";
 
 import { useKanbanStore } from "../store/kanbanStore";
 
-const DashboardLayout = () => {
+const TeamDashboardLayout = () => {
 
   const MyLogo = () => <img src={Logo} className="w-5 h-5" />;
 
@@ -115,4 +115,4 @@ const DashboardLayout = () => {
   );
 };
 
-export default DashboardLayout;
+export default TeamDashboardLayout;
