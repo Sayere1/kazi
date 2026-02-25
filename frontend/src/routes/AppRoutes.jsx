@@ -23,6 +23,9 @@ import TeamDashboardLayout from "../layout/TeamDashboardLayout";
 import TMOverview from "../page/teamdashboard/TMOverview";
 import TeamTaskPage from "../page/teamdashboard/TeamTaskPage";
 import MyWorkPage from "../page/teamdashboard/MyWork";
+import CommunicationLayout from "../layout/CommunicationLayout";
+import CommunicationPage from "../page/communication/CommunicationPage";
+
 
 
 
@@ -36,11 +39,9 @@ const AppRoutes = () => {
                 <Route index element={<DashboardPage />} />
             </Route>
 
-            <Route path="teamwork" element={<TeamDashboardLayout />}>
-                <Route index element={<TMOverview />} />
-                <Route path="tmtask" element={<TeamTaskPage />} />
-                <Route path="tmwork" element={<MyWorkPage />} />
-            </Route>
+                    <Route path="comchats" element={<CommunicationLayout />}>
+          <Route index element={<CommunicationPage />} />
+        </Route>
 
             {/*Protected routes */}
             <Route
@@ -77,6 +78,12 @@ const AppRoutes = () => {
                     <Route path="team-list" element={<TeamList />} />
                     <Route path=":team-Id" element={<IDTeam />} />
                 </Route>
+
+                            <Route path="teamwork" element={<TeamDashboardLayout />}>
+                <Route index element={<TMOverview />} />
+                <Route path="tmtask" element={<TeamTaskPage />} />
+                <Route path="tmwork" element={<MyWorkPage />} />
+            </Route>
 
             </Route>
         </Routes>
